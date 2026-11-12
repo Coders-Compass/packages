@@ -1,0 +1,30 @@
+[package]
+name = "articulate-coderscompass"
+version = "0.1.8"
+entrypoint = "src/lib.typ"
+authors = ["Subhomoy Haldar <subhomoy@coderscompass.org>"]
+license = "MIT"
+description = "Two-column article layout for the Coders' Compass website, written in Markdown or Typst."
+homepage = "https://coderscompass.org"
+repository = "https://github.com/Coders-Compass/articulate-coderscompass"
+keywords = ["typst", "coderscompass", "article", "paper"]
+categories = ["paper"]
+disciplines = []
+compiler = "0.15.1"
+exclude = [
+    ".github",
+    "docs",
+    "scripts",
+    "tests",
+    ".typstignore",
+    "Justfile",
+    "assets/images/page-1.svg",
+    "assets/images/page-2.svg",
+    "assets/images/page-3.svg",
+    "assets/images/page-4.svg",
+]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "assets/images/page-1.png"
